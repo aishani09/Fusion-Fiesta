@@ -1,0 +1,113 @@
+
+				-:SQL FOR BACK-END TECHNICAL DESIGN:-
+
+For creating the database-
+
+	create database restaurant;
+	use restaurant;
+
+For starters table-
+
+	create table starters(ITEM varchar(30), PRICE int(4));
+
+	insert into starters(ITEM, PRICE) values ("Paneer Irani Kabab", 260);
+	insert into starters(ITEM, PRICE) values ("Vegetable Samosa", 110);
+	insert into starters(ITEM, PRICE) values ("Prawn Cocktail", 265);
+	insert into starters(ITEM, PRICE) values ("Fish Makhmali", 375);
+	insert into starters(ITEM, PRICE) values ("Fish Fingers", 385);
+	insert into starters(ITEM, PRICE) values ("Mutton Shami Kabab", 325);
+	insert into starters(ITEM, PRICE) values ("Gold Coin Prawn", 325);
+	insert into starters(ITEM, PRICE) values ("Chicken Fried Liver", 245);
+
+For main course table-
+
+	create table main_course(ITEM varchar(30), PRICE int(4));
+
+	insert into main_course(ITEM, PRICE) values ("Keema Naan", 155);
+	insert into main_course(ITEM, PRICE) values ("Tandoori Roti", 55);
+	insert into main_course(ITEM, PRICE) values ("Butter Roti", 60);
+	insert into main_course(ITEM, PRICE) values ("Pea Pulao", 195);
+	insert into main_course(ITEM, PRICE) values ("Biryani Ala Nawabi", 280);
+	insert into main_course(ITEM, PRICE) values ("Biryani Ala Kashmiri", 270);
+	insert into main_course(ITEM, PRICE) values ("Mixed Fried Rice", 265);
+	insert into main_course(ITEM, PRICE) values ("Veg Fried Rice", 210);
+
+For side dish table-
+
+	create table side_dish(ITEM varchar(30), PRICE int(4));
+
+	insert into side_dish(ITEM, PRICE) values ("Chicken Curry", 250);
+	insert into side_dish(ITEM, PRICE) values ("Chicken Bharta", 275);
+	insert into side_dish(ITEM, PRICE) values ("Chicken Butter Masala", 290);
+	insert into side_dish(ITEM, PRICE) values ("Nalli Gosht", 460);
+	insert into side_dish(ITEM, PRICE) values ("Mutton Rogan Josh", 290);
+	insert into side_dish(ITEM, PRICE) values ("Chilli Fish", 310);
+	insert into side_dish(ITEM, PRICE) values ("Chilli Prawn", 405);
+	insert into side_dish(ITEM, PRICE) values ("Mutton Masala", 300);
+
+For chef's specials table-
+
+	create table chefs_specials(ITEM varchar(30), PRICE int(4));
+
+	insert into chefs_specials(ITEM, PRICE) values ("Bhetki Meuneir", 400);
+	insert into chefs_specials(ITEM, PRICE) values ("Grilled Bhetki", 400);
+	insert into chefs_specials(ITEM, PRICE) values ("Fried Prawns", 400);
+	insert into chefs_specials(ITEM, PRICE) values ("Chicken Steak", 400);
+	insert into chefs_specials(ITEM, PRICE) values ("Mutton Hamburger Steak", 420);
+	insert into chefs_specials(ITEM, PRICE) values ("Grilled Chicken", 315);
+	insert into chefs_specials(ITEM, PRICE) values ("Chelo Kabab", 415);
+	insert into chefs_specials(ITEM, PRICE) values ("Mutton Chelo Kabab", 475);
+
+For beverages table-
+
+	create table beverages(ITEM varchar(30), PRICE int(4));
+
+	insert into beverages(ITEM, PRICE) values ("Lassi", 105);
+	insert into beverages(ITEM, PRICE) values ("Fresh Lime Soda", 90);
+	insert into beverages(ITEM, PRICE) values ("Coffee", 100);
+	insert into beverages(ITEM, PRICE) values ("Coffee With Cream", 105);
+	insert into beverages(ITEM, PRICE) values ("Hot Chocolate", 170);
+	insert into beverages(ITEM, PRICE) values ("Darjeeling Tea", 140);
+	insert into beverages(ITEM, PRICE) values ("Earl Grey Tea", 140);
+	insert into beverages(ITEM, PRICE) values ("Aerated Waters", 75);
+
+For desserts table-
+
+	create table desserts(ITEM varchar(30), PRICE int(4));
+
+	insert into desserts(ITEM, PRICE) values ("Ice-cream of your choice", 120);
+	insert into desserts(ITEM, PRICE) values ("Pistachio Ice-cream", 135);
+	insert into desserts(ITEM, PRICE) values ("Tutti Frutti", 185);
+	insert into desserts(ITEM, PRICE) values ("Creme Caramel", 155);
+	insert into desserts(ITEM, PRICE) values ("Souffle Of The Day", 185);
+	insert into desserts(ITEM, PRICE) values ("Fresh Mango King(Seasonal)", 200);
+	insert into desserts(ITEM, PRICE) values ("American Banana Split", 160);
+	insert into desserts(ITEM, PRICE) values ("Brownie with hot chocolate", 160);
+
+For the employee details-
+
+	create table employee (NAME varchar(20), DESIGNATION varchar(20), DATE_OF_JOINING date, SALARY int(6);
+
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Sahil Verma", "Manager","2014-01-20", 50000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Manisha Roy", "Manager","2012-06-01", 57000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Kaushik Mitra", "Head Chef","2015-05-15", 48000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Nitya Sharma", "Chef","2015-02-05", 40000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Karan Mehta", "Chef","2016-12-09", 40000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Ria Mishra", "Chef","2015-10-17", 40000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Gaurav Mukherjee", "Chef","2017-07-12", 40000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Kartik Das", "Waiter","2015-03-22", 20000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Anup Kumar", "Waiter","2015-01-16", 20000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Sachin Mehra", "Waiter","2014-10-06", 20000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Subham Saha", "Waiter","2016-11-19", 20000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Anuj Paul", "Waiter","2017-01-30", 20000);
+	insert into employee(NAME, DESIGNATION, DATE_OF_JOINING, SALARY) values ("Raja Saha", "Security Guard","2013-10-04", 10000);
+
+For purchase records table(only creation)-
+
+	create table purchase_records(DATE int, BILL_NO int(3), CUSTOMER_NAME varchar(20), CUSTOMER_CONTACT bigint(10), TOTAL_AMT int(5));
+
+For login table-
+
+	create table login(uid varchar(10), pass int(4));
+	insert into login(uid, pass) values ("aishani",123);
+
